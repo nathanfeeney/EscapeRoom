@@ -1,0 +1,22 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	background-color: #C6CCB2;
+	font-family: sans-serif;
+}
+
+header{
+	background-color: #242423;
+	color:#E5EAFA;
+	text-align: center;
+	font-size: 30px;
+}
+.room{
+	margin:10px 0 ;
+}
+.h1{
+	color:#BF4E30;
+	font-size: 20px;
+	text-align:center;
+}
