@@ -1,9 +1,14 @@
 *{
 	margin:0;
 	padding:0;
-	box-sizing: border-box;
-	background-color: #C6CCB2;
+	
+	
 	font-family: sans-serif;
+}
+.container{
+	background-color: #C6CCB2;
+	max-width: 100%;
+
 }
 
 header{
@@ -15,8 +20,10 @@ header{
 .room{
 	margin:10px 0 ;
 }
-.h1{
+.h5{
 	color:#BF4E30;
-	font-size: 20px;
 	text-align:center;
+}
+#roomTwo, #roomThree{
+	display: 
 }
