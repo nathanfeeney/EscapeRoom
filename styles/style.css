@@ -28,10 +28,16 @@ ul{
 	list-style: none;
 	text-align: center;
 }
-.h5{
+ul li{
+	margin:10% 0 ;
+}
+.h3{
 	color:#BF4E30;
 	font-weight: bold;
 	text-align:center;
+}
+.question{
+	margin:2% 0;
 }
 hr{
 	background-color:#F5CB5C;
@@ -41,4 +47,13 @@ hr{
 }
 .col-9{
 	margin:0 auto;
+}
+
+
+
+
+/*--------------------------------------------*/
+
+#questionTwo, #questionThree{
+	visibility: hidden;
 }
