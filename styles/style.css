@@ -21,7 +21,12 @@ header{
 	font-size: 30px;
 }
 .room{
-	margin:3% 0 ;
+	margin:3% 0;
+	text-align: center
+}
+ul{
+	list-style: none;
+	text-align: center;
 }
 .h5{
 	color:#BF4E30;
