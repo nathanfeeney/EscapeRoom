@@ -2,15 +2,18 @@
 	margin:0;
 	padding:0;
 	
-	
+	color:#999;
 	font-family: sans-serif;
 }
 .container{
-	background-color: #C6CCB2;
+	background-color: #242423;
 	max-width: 100%;
-
+	
 }
-
+#welcome{
+	text-align: center;
+	margin:5% 0;
+}
 header{
 	background-color: #242423;
 	color:#E5EAFA;
@@ -18,12 +21,19 @@ header{
 	font-size: 30px;
 }
 .room{
-	margin:10px 0 ;
+	margin:3% 0 ;
 }
 .h5{
 	color:#BF4E30;
+	font-weight: bold;
 	text-align:center;
+}
+hr{
+	background-color:#F5CB5C;
 }
 #roomTwo, #roomThree{
 	display: 
+}
+.col-9{
+	margin:0 auto;
 }
