@@ -51,9 +51,11 @@ hr{
 
 
 
+            /* Question Styling */
+/*--------------------------------------------
 
-/*--------------------------------------------*/
-
-#questionTwo, #questionThree{
+#questionTwo, #questionThree, #questionFour{
 	visibility: hidden;
 }
+
+*/
