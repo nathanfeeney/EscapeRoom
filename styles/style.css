@@ -2,7 +2,7 @@
 	margin:0;
 	padding:0;
 	
-	color:#999;
+	color:#f7f7f7;
 	font-family: sans-serif;
 }
 .container{
@@ -18,7 +18,7 @@ header{
 	background-color: #242423;
 	color:#E5EAFA;
 	text-align: center;
-	font-size: 30px;
+	font-size: 45px;
 }
 .room{
 	margin:3% 0;
@@ -29,19 +29,19 @@ ul{
 	text-align: center;
 }
 ul li{
-	margin:10% 0 ;
+	margin:20% 0 ;
 }
 .h3{
+	font-size: 40px;
 	color:#BF4E30;
 	font-weight: bold;
 	text-align:center;
 }
-.question{
-	margin:2% 0;
-}
+
 hr{
 	background-color:#F5CB5C;
 }
+
 #roomTwo, #roomThree{
 	display: 
 }
@@ -52,10 +52,20 @@ hr{
 
 
             /* Question Styling */
-/*--------------------------------------------
 
 #questionTwo, #questionThree, #questionFour{
 	visibility: hidden;
 }
 
-*/
+
+.questionText{
+	font-size: 
+}
+.question{
+	font-size: 30px;
+	margin:5% 0;
+}
+input{
+	width:400px;
+	margin: 0 auto;
+}

@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<script type="text/javascript" src="script.js"></script>
+
 	<link rel="stylesheet" href="styles/bootstrap.css">
 	<link rel="stylesheet" href="styles/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/bootstrap-grid.css">
@@ -21,6 +24,11 @@
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
 				<header>Bampot Escape Room</header>
+				<div>
+					<p class="h2">Time Left</p>
+					<p class="h2">00:00</p>
+				</div>
+				
 			</div>
 		</div>
 		
@@ -58,7 +66,14 @@
 				</li>
 				<li id="questionTwo">
 					<p class="h4 question">2. Solve the Following.</p>
-					<p>Fusce vitae sapien vitae nulla varius viverra. Cras sit amet dignissim neque. Etiam efficitur felis massa, non ullamcorper mi venenatis tristique. Aliquam posuere elit porttitor accumsan dictum. Pellentesque convallis laoreet laoreet. Vivamus vel vulputate lectus. </p>
+					<p class="questionText">If 9999 = 4, 8888 = 8, 1816 = 6, 1212 = 0, then 1919 = </p>
+					<div class="form-group">
+						<input 
+						id="q2Input"
+						type="text" 
+						class="form-control form-control-lg" 
+						placeholder="Enter Answer...">
+					</div>
 
 				</li>
 
@@ -98,7 +113,11 @@
 	</div>
 </div>
 <!----------------------------------------------------------->
+<script>
+	document.getElementById('q1Input').addEventListener('input', funtion(){
+	document.getElementById('questionTwo').style.visibility = 'visible';
+})
+</script>
 
-<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

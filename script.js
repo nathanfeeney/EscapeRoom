@@ -1,1 +1,4 @@
-document.write(5 + 6);
+document.getElementById('questionTwo').style.visibility = 'visible';
+document.getElementById('q1Input').addEventListener('input', funtion(){
+	
+})
