@@ -20,8 +20,9 @@
 	<!--- ----------------- -->
 </head>
 <body>
-	<div class="container">
-		<div class="row">
+
+	<div class="container" id="bgFlash">
+		<div class="row header ">
 			<div class="col-md-6 offset-md-3">
 				<header>Bampot Escape Room</header>
 				<div>
@@ -61,6 +62,7 @@
 						type="text" 
 						class="form-control form-control-lg" 
 						placeholder="Enter Answer...">
+						<input type="submit" onlclick="checkAns" id=>
 					</div>
 
 				</li>
@@ -133,6 +135,10 @@
 
 			if(userInput == "heroine"){
 				document.getElementById('questionTwo').style.visibility = 'visible';
+
+
+				//DELAY  GREEN FLASS TO BE ADDED
+				//document.getElementById('bgFlash').style.background = 'green';
 				console.log("Correct");
 			}
 		});
