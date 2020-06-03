@@ -64,7 +64,7 @@
 							class="form-control form-control-lg" 
 							placeholder="Enter Answer...">
 
-							<input class="btn btn-primary" type="submit" onclick="checkAnswer();">
+							<input class="btn btn-primary" type="submit" onclick="test();">
 						</form>
 					</div>
 
@@ -128,22 +128,32 @@
 		//document.getElementById('questionTwo').style.visibility = 'visible';
 		})
 	}*/
+function test(){
+		var ansArray = ["ans1", "ans2"];
+		var ansArrayLength = ansArray.length;
+		for (var i = 0; i < ansArrayLength; i++) {
+		    console.log(ansArray[i]);
+		    //Do something
+		}
+}
 
 
+	
 
-	var ans ["heroine", "4"];
 	function checkAnswer(){
-		var input = document.getElementById("q1Input").value;
-		
+
+
+
+
+		var input = document.getElementById(uInput).value;
 		if(input == correctAns){
+
 			document.getElementById('questionTwo').style.visibility = 'visible';
-
-
 				//DELAY  GREEN FLASS TO BE ADDED
 				//document.getElementById('bgFlash').style.background = 'green';
 			document.getElementById("q1Input").classList.add('green-glow');
 			setTimeout(function(){ document.getElementById("q1Input").classList.remove('green-glow')
-			},700);
+			},1000);
 
 
 				console.log("Correct");
