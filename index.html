@@ -119,8 +119,8 @@
 </div>
 <!----------------------------------------------------------->
 <script>
-	var qOneAns;
-	var qOneInput = document.getElementById("q1Input").value;
+	var qOneAns = "ans";
+	
 
 	/*function checkAns(userInput, qAnswer){
 		document.getElementById('q1Input').addEventListener('input', function(checkAns){
@@ -131,11 +131,12 @@
 
 
 
-	var ans ["heroine", "4"];
+	//var ans ["heroine", "4"];
 	function checkAnswer(){
+		var qOneInput = document.getElementById("q1Input").value;
 		var input = document.getElementById("q1Input").value;
 		
-		if(input == correctAns){
+		if(qOneInput == qOneAns){
 			document.getElementById('questionTwo').style.visibility = 'visible';
 
 
@@ -144,8 +145,6 @@
 			document.getElementById("q1Input").classList.add('green-glow');
 			setTimeout(function(){ document.getElementById("q1Input").classList.remove('green-glow')
 			},700);
-
-
 				console.log("Correct");
 				;
 		} else {
