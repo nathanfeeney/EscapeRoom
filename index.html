@@ -59,7 +59,7 @@
 					<div class="form-group">
 						<form action="" id="q1form" onsubmit="return false;">
 							<input 
-							id="q1Input"
+							id="q0Input"
 							type="text" 
 							class="form-control form-control-lg" 
 							placeholder="Enter Answer...">
@@ -78,6 +78,7 @@
 						type="text" 
 						class="form-control form-control-lg" 
 						placeholder="Enter Answer...">
+						<input class="btn btn-primary" type="submit" onclick="checkAnswer();">
 					</div>
 
 				</li>
@@ -129,82 +130,38 @@
 		})
 	}*/
 
-
-	var qDivsArray;
-	var ansArray ["heroine", "4"];
+	i = 0;
+	var qDivsArray = ["questionOne", "questionTwo","questionThree","questionFour","questionFive"]
+	var ansArray = ["heroine", "4", "ans", "ans5"];
+	var inputArray = ["q1Input","q2Input"]
 	function checkAnswer(){
-		var qOneInput = document.getElementById("q1Input").value;
-		var input = document.getElementById("q1Input").value;
-		//alert(ansArray[1]);
-		if(qOneInput == qOneAns){
-			document.getElementById('questionTwo').style.visibility = 'visible';
+		
+		var qInput = document.getElementById("q"+i+"Input").value;
+		//var input = document.getElementById(").value;
+		
 
+		if(qInput == ansArray[0]){
+			document.getElementById(qDivsArray[i+1]).style.visibility = 'visible';
 
-				//DELAY  GREEN FLASS TO BE ADDED
-				//document.getElementById('bgFlash').style.background = 'green';
-			document.getElementById("q1Input").classList.add('green-glow');
-			setTimeout(function(){ document.getElementById("q1Input").classList.remove('green-glow')
+			
+			alert(ansArray[i]);
+
+			document.getElementById("q"+i+"Input").classList.add('green-glow');
+			setTimeout(function(){ document.getElementById("q"+i+"Input").classList.remove('green-glow')
 			},700);
 				console.log("Correct");
+				 i++;
+
 				;
 		} else {
 
-			document.getElementById("q1Input").classList.add('red-glow');
-			setTimeout(function(){ document.getElementById("q1Input").classList.remove('red-glow')
+			document.getElementById("q"+i+"Input").classList.add('red-glow');
+			setTimeout(function(){ document.getElementById("q"+i+"Input").classList.remove('red-glow')
 			},1000);
 		}
 
 
 	}
-
-
-
-
-	function changeColor(){
-		document.getElementById('bgFlash').style.background = 'green';
-	}
-	function myFunction(){
-		// Question 1 ///
-		document.getElementById('q1Input').addEventListener('input', function(checkAns){
-			
-			let userInput = checkAns.target.value;
-			console.log(userInput);
-
-			if(userInput == "ans"){
-				document.getElementById('questionTwo').style.visibility = 'visible';
-
-
-				//DELAY  GREEN FLASS TO BE ADDED
-				//document.getElementById('bgFlash').style.background = 'green';
-				console.log("Correct");
-			}
-		});
-	}
-	
-
-	// Question 2 ///
-	document.getElementById('q2Input').addEventListener('input', function(checkAns){
-			
-			let userInput = checkAns.target.value;
-			console.log(userInput);
-
-			if(userInput == "4"){
-				document.getElementById('questionThree').style.visibility = 'visible';
-				console.log("Correct");
-			}
-		});
-
-	// Question 2 ///
-	document.getElementById('q3Input').addEventListener('input', function(checkAns){
-			
-			let userInput = checkAns.target.value;
-			console.log(userInput);
-
-			if(userInput == "4"){
-				document.getElementById('questionThree').style.visibility = 'visible';
-				console.log("Correct");
-			}
-		});
 	
 </script>
 
