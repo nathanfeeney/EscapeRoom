@@ -44,7 +44,7 @@
 	
 <!----------------------------------------------------------->
 	<div class="row room" id="roomOne">
-		<div class="col-md-6 offset-md-3">
+		<div class="col-md-6 offset-md-3 center-block"">
 			<p class="h3">Room One</p>
 		<hr>
 		</div>
@@ -56,7 +56,7 @@
 					<div class="ridleOneVid">
 						<iframe width="100%" height="200px" src="https://www.youtube.com/embed/V1kOX0vYhPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<div class="form-group">
+					<div class="form-group w-50">
 						<form action="" id="q1form" onsubmit="return false;">
 							<input 
 							id="q0Input"
@@ -72,7 +72,7 @@
 				<li id="questionTwo">
 					<p class="h4 question">2. Solve the Following.</p>
 					<p class="questionText">If 9999 = 4, 8888 = 8, 1816 = 6, 1212 = 0, then 1919 = </p>
-					<div class="form-group">
+					<div class="form-groupw-50">
 						<input 
 						id="q1Input"
 						type="text" 
@@ -85,7 +85,49 @@
 
 
 				<li id="questionThree">
-					<p class="h4 question">3. Insert Photo Problem.</p>
+					<p class="h4 question ">3. Name these countries </p>
+					<div class="row">
+  						<div class="col-sm q3Part1" id="q3Part1">
+							<img src="images/emojis1.png" alt="questionThree">
+							<div class="form-group w-50 center-block">
+								<input 
+								id="q3Input"
+								type="text" 
+								class="form-control form-control-lg" 
+								placeholder="Enter Answer..." width="100px;">
+								<input class="btn btn-primary" type="submit" onclick="checkAnswer();">
+							</div>
+
+							
+  							
+  						</div>
+  						<div class="col-sm q3Part1" id="q3Part2">
+  							<img src="images/emojis2.png" alt="questionThree">
+							<div class="form-group w-50">
+								<input 
+								id="q4Input"
+								type="text" 
+								class="form-control form-control-lg" 
+								placeholder="Enter Answer...">
+								<input class="btn btn-primary" type="submit" onclick="checkAnswer();">
+							</div>
+  							
+							
+  						</div>
+						 <div class="col-sm q3Part1" id="q3Part3">
+							<img src="images/emojis3.png" alt="questionThree">
+							<div class="form-group w-50">
+								<input 
+								id="q5Input"
+								type="text" 
+								class="form-control form-control-lg" 
+								placeholder="Enter Answer...">
+								<input class="btn btn-primary" type="submit" onclick="checkAnswer();">
+							</div>
+							
+							
+						 </div>
+					</div>
 				</li>
 				<li id="questionFour">
 					<p class="h4 question">4. Emoji problem</p>

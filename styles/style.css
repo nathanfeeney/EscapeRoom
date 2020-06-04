@@ -61,7 +61,7 @@ hr{
             /* Question Styling */
 
 #questionTwo, #questionThree, #questionFour{
-	visibility: hidden;
+/*	visibility: hidden;*/
 }
 
 
@@ -73,8 +73,10 @@ hr{
 	margin:5% 0;
 }
 input{
-	width:400px;
+	width:100px;
+	text-align: center;
 	margin: 2% auto;
+	float:none;
 }
 
 
