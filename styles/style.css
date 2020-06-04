@@ -72,6 +72,9 @@ hr{
 	font-size: 30px;
 	margin:5% 0;
 }
+.form-group{
+	margin:0 auto;
+}
 input{
 	width:100px;
 	text-align: center;
