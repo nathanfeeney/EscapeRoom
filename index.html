@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<script type="text/javascript" src="script.js"></script>
+
 
 	<link rel="stylesheet" href="styles/bootstrap.css">
 	<link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -20,7 +20,7 @@
 	<!--- ----------------- -->
 </head>
 <body>
-
+	
 	<div class="container" id="bgFlash">
 		<div class="row header ">
 			<img src="images/game-header.png" alt="Bampot Escape Room" class="img-fluid">
@@ -30,8 +30,17 @@
 		
 		<div class="row">
 			<div class="col">
-				<p class="h2">Time Left</p>
-				<p class="h2">00:00</p>
+				<h1>
+					<p id="output">
+						<b>0:00:00:00</b>
+					</p>
+				</h1>
+				<div id="controls">
+					<button id="startPause" onclick="startPause();">
+						<b id="start">Start</b>
+					</button>
+
+				</div>
 			</div>
 		</div>
 		<div class="row">
@@ -182,6 +191,8 @@
 
 
 <!----------------------------------------------------------->
+
+<script src="js/stopwatch.js"></script>
 <script>
 	var correctAnsCount = 0;
 	i = 0;
@@ -229,8 +240,16 @@
 
 
 
+
+
+	//////// STOP WATCH //////////////////////
+
+
+
+
 	
 </script>
+
 
 </body>
 </html>
