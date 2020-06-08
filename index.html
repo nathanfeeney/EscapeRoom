@@ -72,7 +72,7 @@
 				<li id="questionTwo">
 					<p class="h4 question">2. Solve the Following.</p>
 					<p class="questionText">If 9999 = 4, 8888 = 8, 1816 = 6, 1212 = 0, then 1919 = </p>
-					<div class="form-groupw-50">
+					<div class="form-group w-50">
 						<input 
 						id="q1Input"
 						type="text" 
@@ -83,57 +83,60 @@
 
 				</li>
 
-
-				<li id="questionThree">
-					<p class="h4 question ">3. Name these countries </p>
+			<ul>
+				<p class="h4 question" id="q3Title">3. Name these countries </p>
+				<li id="questionThree" class="emoji-li col-sm">
 					<div class="row">
-  						<div class="col-sm q3Part1" id="q3Part1">
+  						<div class="col-sm q3Part1"  >
 							<img src="images/emojis1.png" alt="questionThree">
 							<div class="form-group w-50 center-block">
 								<input 
-								id="q3Input"
+								id="q2Input"
 								type="text" 
 								class="form-control form-control-lg" 
 								placeholder="Enter Answer..." width="100px;">
 								<input class="btn btn-primary" type="submit" onclick="checkAnswer();">
 							</div>
-
-							
-  							
-  						</div>
-  						<div class="col-sm q3Part1" id="q3Part2">
+							</div>
+				</li>
+				<li id="questionFour" class="emoji-li col-sm">
+  					
+  						<div class="col-sm q3Part1 " >
   							<img src="images/emojis2.png" alt="questionThree">
+							<div class="form-group w-50">
+								<input 
+								id="q3Input"
+								type="text" 
+								class="form-control form-control-lg" 
+								placeholder="Enter Answer...">
+								<input class="btn btn-primary" type="submit" onclick="checkAnswer();">
+							</div>
+  						</div>
+				</li>
+				<li id="questionFive" class="emoji-li col-sm">
+  					
+						 <div class="col-sm q3Part1" >
+							<img src="images/emojis3.png" alt="questionThree">
 							<div class="form-group w-50">
 								<input 
 								id="q4Input"
 								type="text" 
 								class="form-control form-control-lg" 
 								placeholder="Enter Answer...">
-								<input class="btn btn-primary" type="submit" onclick="checkAnswer();">
-							</div>
-  							
-							
-  						</div>
-						 <div class="col-sm q3Part1" id="q3Part3">
-							<img src="images/emojis3.png" alt="questionThree">
-							<div class="form-group w-50">
-								<input 
-								id="q5Input"
-								type="text" 
-								class="form-control form-control-lg" 
-								placeholder="Enter Answer...">
-								<input class="btn btn-primary" type="submit" onclick="checkAnswer();">
+								<input class="btn btn-primary" type="submit" onclick="checkAnswer(); openRoom();">
 							</div>
 							
 							
 						 </div>
 					</div>
-				</li>
+					</li>
+				</ul>
+
 				<li id="questionFour">
 					<p class="h4 question">4. Emoji problem</p>
 				</li>
 			</ul>
-			<p>Fusce vitae sapien vitae nulla varius viverra. Cras sit amet dignissim neque. Etiam efficitur felis massa, non ullamcorper mi venenatis tristique. Aliquam posuere elit porttitor accumsan dictum. Pellentesque convallis laoreet laoreet. Vivamus vel vulputate lectus. Aenean felis diam, ultricies sit amet dictum quis, imperdiet imperdiet nisl. In hac habitasse platea dictumst. Phasellus eleifend ligula tellus, sed facilisis magna commodo vitae. Vivamus ut tempor nunc.</p>
+
 		</div>
 		
 	</div>
@@ -145,6 +148,25 @@
 		<div class="col-md-6 offset-md-3">
 			<p class="h3">Room Two</p>
 		</div>
+		<ul>
+			<li id="questionSix" class="emoji-li col-sm">
+  					
+					 <div class="col-sm q3Part1" >
+						<img src="images/emojis3.png" alt="questionThree">
+							<div class="form-group w-50">
+								<input 
+								id="q4Input"
+								type="text" 
+								class="form-control form-control-lg" 
+								placeholder="Enter Answer...">
+								<input class="btn btn-primary" type="submit" onclick="checkAnswer(); openRoom();">
+							</div>
+							
+							
+					 </div>
+				</div>
+			</li>
+		</ul>
 		<div class="col-md-6 offset-md-3">
 			<p>Fusce vitae sapien vitae nulla varius viverra. Cras sit amet dignissim neque. Etiam efficitur felis massa, non ullamcorper mi venenatis tristique. Aliquam posuere elit porttitor accumsan dictum. Pellentesque convallis laoreet laoreet. Vivamus vel vulputate lectus. Aenean felis diam, ultricies sit amet dictum quis, imperdiet imperdiet nisl. In hac habitasse platea dictumst. Phasellus eleifend ligula tellus, sed facilisis magna commodo vitae. Vivamus ut tempor nunc.</p>
 		</div>
@@ -167,16 +189,20 @@
 
 <!----------------------------------------------------------->
 <script>
-
+	var correctAnsCount = 0;
 	i = 0;
-	var qDivsArray = ["questionOne", "questionTwo","questionThree","questionFour","questionFive"]
-	var ansArray = ["heroine", "4", "ans", "ans5"];
-	var inputArray = ["q1Input","q2Input"]
+	var qDivsArray = ["questionOne", "questionTwo","questionThree","questionFour","questionFive","questionSix", "question7"]
+	
+	var ansArray = ["ans1", "ans2", "ans3","ans4", "ans5","ans6", "ans7", "ans8", "ans9", "ans10", "ans11"];
+	var inputArray = ["q1Input","q2Input","q3Input","q4Input","q5Input","q6Input","q7Input","q8Input","q9Input","q10Input"];
+
+
+	
+
 	function checkAnswer(){
 		
 		var qInput = document.getElementById("q"+i+"Input").value;
 		//var input = document.getElementById(").value;
-		
 
 		if(qInput == ansArray[i]){
 			document.getElementById(qDivsArray[i+1]).style.visibility = 'visible';
@@ -188,6 +214,9 @@
 			setTimeout(function(){ document.getElementById("q"+i+"Input").classList.remove('green-glow')},700);
 				console.log("Correct");
 				 i++;
+				 correctAnsCount++;
+
+				 console.log(correctAnsCount);
 
 				;
 		} else {
@@ -195,9 +224,13 @@
 			document.getElementById("q"+i+"Input").classList.add('red-glow');
 			setTimeout(function(){ document.getElementById("q"+i+"Input").classList.remove('red-glow')
 			},1000);
+		} //
+	}// END OF FUCNTION
+
+	function openRoom(){
+		if (correctAnsCount == 5){
+			document.getElementById("roomTwo").style.visibility = 'visible';
 		}
-
-
 	}
 
 

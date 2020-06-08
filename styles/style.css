@@ -29,7 +29,8 @@ header{
 }
 .room{
 	margin:3% 0;
-	text-align: center
+	text-align: center;
+	background-color: #242423;
 }
 ul{
 	list-style: none;
@@ -60,8 +61,8 @@ hr{
 
             /* Question Styling */
 
-#questionTwo, #questionThree, #questionFour{
-/*	visibility: hidden;*/
+#questionTwo, #questionThree, #q3Title, #questionFour, #questionFive, #roomTwo{
+	visibility: hidden;
 }
 
 
@@ -82,7 +83,9 @@ input{
 	float:none;
 }
 
-
+.emoji-li{
+	width:33.3%;
+}
 
 .green-glow{
 	border:4px solid #4dcc7d;
