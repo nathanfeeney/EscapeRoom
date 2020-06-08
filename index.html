@@ -29,18 +29,21 @@
 		
 		
 		<div class="row">
-			<div class="col">
-				<h1>
-					<p id="output">
-						<b>0:00:00:00</b>
-					</p>
-				</h1>
+			<div class="col ">
+				<div class="stopwatch">
+					<h1>
+						<p id="output">
+							<b>0:00:00:00</b>
+						</p>
+					</h1>
 				<div id="controls">
 					<button id="startPause" onclick="startPause();">
 						<b id="start">Start</b>
 					</button>
 
 				</div>
+				</div>
+				
 			</div>
 		</div>
 		<div class="row">
@@ -140,9 +143,20 @@
 						</li>
 				</ul>
 				</div>
+			</div>
 					
 <!----------------------------------------------------------->
+<div class="row room" id="roomTwoLock-c">
+		<div class="col-md-6 offset-md-3">
+			<p class="h3">Room Two</p>
+			<img src="images/padlock_c.png" alt="Closed Padlock">
+		</div>
+</div>
 
+
+
+
+<!----------------------------------------------------------->
 	<div class="row room" id="roomTwo">
 		<div class="col-md-6 offset-md-3">
 			<p class="h3">Room Two</p>
@@ -172,6 +186,13 @@
 		
 	</div>
 <!----------------------------------------------------------->
+<div class="row room" id="roomThreeLock-c">
+		<div class="col-md-6 offset-md-3">
+			<p class="h3">Room Three</p>
+			<img src="images/padlock_c.png" alt="Closed Padlock">
+		</div>
+</div>
+<!----------------------------------------------------------->
 	<div class="row room" id="roomThree">
 		<div class="col-md-6 offset-md-3">
 			<p class="h3">Room Three</p>
@@ -190,66 +211,10 @@
 
 
 
-<!----------------------------------------------------------->
+<!------------------------JAVASCRIPT----------------------->
 
 <script src="js/stopwatch.js"></script>
-<script>
-	var correctAnsCount = 0;
-	i = 0;
-	var qDivsArray = ["questionOne", "questionTwo","questionThree","questionFour","questionFive","questionSix", "question7"]
-	
-	var ansArray = ["ans1", "ans2", "ans3","ans4", "ans5","ans6", "ans7", "ans8", "ans9", "ans10", "ans11"];
-	var inputArray = ["q1Input","q2Input","q3Input","q4Input","q5Input","q6Input","q7Input","q8Input","q9Input","q10Input"];
-
-
-	
-
-	function checkAnswer(){
-		
-		var qInput = document.getElementById("q"+i+"Input").value;
-		//var input = document.getElementById(").value;
-
-		if(qInput == ansArray[i]){
-			document.getElementById(qDivsArray[i+1]).style.visibility = 'visible';
-
-			
-			alert(ansArray[i]);
-
-			document.getElementById("q"+i+"Input").classList.add('green-glow');
-			setTimeout(function(){ document.getElementById("q"+i+"Input").classList.remove('green-glow')},700);
-				console.log("Correct");
-				 i++;
-				 correctAnsCount++;
-
-				 console.log(correctAnsCount);
-
-				;
-		} else {
-
-			document.getElementById("q"+i+"Input").classList.add('red-glow');
-			setTimeout(function(){ document.getElementById("q"+i+"Input").classList.remove('red-glow')
-			},1000);
-		} //
-	}// END OF FUCNTION
-
-	function openRoom(){
-		if (correctAnsCount == 5){
-			document.getElementById("roomTwo").style.visibility = 'visible';
-		}
-	}
-
-
-
-
-
-	//////// STOP WATCH //////////////////////
-
-
-
-
-	
-</script>
-
+<script src="js/game.js"></script>
 
 </body>
 </html>

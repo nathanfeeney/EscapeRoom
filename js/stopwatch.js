@@ -4,15 +4,15 @@ function startPause(){
 	if(running == 0){
 		running = 1;
 		increment();
-	document.getElementById("start").innerHTML = "Pause";
-	document.getElementById("startPause").style.backgroundColor = "red";	
-	document.getElementById("startPause").style.borderColor = "red";
+	document.getElementById("start").innerHTML = "Stop";
+	document.getElementById("startPause").style.backgroundColor = "green";	
+	//document.getElementById("startPause").style.borderColor = "green";
 	}
 	else{
 		running = 0;
-	document.getElementById("start").innerHTML = "Resume";	
-	document.getElementById("startPause").style.backgroundColor = "green";	
-	document.getElementById("startPause").style.borderColor = "green";
+	//document.getElementById("start").innerHTML = "Start";	
+	//document.getElementById("startPause").style.backgroundColor = "Green";	
+	//document.getElementById("startPause").style.borderColor = "pink";
 	}
 }
 function reset(){
@@ -21,7 +21,7 @@ function reset(){
 	document.getElementById("start").innerHTML = "Start";
 	document.getElementById("output").innerHTML = "0:00:00:00";
 	document.getElementById("startPause").style.backgroundColor = "green";	
-	document.getElementById("startPause").style.borderColor = "green";
+	//document.getElementById("startPause").style.borderColor = "green";
 }
 function increment(){
 	if(running == 1){

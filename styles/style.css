@@ -10,7 +10,7 @@ html{
 }
 
 .container{
-	background-color: #242423;
+	background-color:#242423 ;
 	height:100%;
 	max-width: 100%;
 	
@@ -19,17 +19,37 @@ html{
 article{
 	font-size: 24px;
 }
+
+.stopwatch{
+	text-align: center;
+	
+	margin:0 auto;
+}
+.stopwatch button{
+	border-radius: 50%;
+	padding:2%;
+	background-color: red;
+	border:2px white solid;
+}
+.stopwatch h1{
+	
+}
+.row{
+	/*background-color: #242423;*/
+}
 .header{
-	background: #242423;
+	background:#0c0c0c;
 
 	border-bottom: 3px solid #BF4E30;
 }
-.row{
-	background-color: #242423;
-}
+
 .header img{
 	width:100%;
 
+}
+.stopwatch p {
+	font-size: 70px;
+	font-weight: 200;
 }
 #welcome{
 	text-align: center;
@@ -75,7 +95,7 @@ hr{
 
             /* Question Styling */
 
-#questionTwo, #questionThree, #q3Title, #questionFour, #questionFive, #roomTwo{
+#questionTwo, #questionThree, #q3Title, #questionFour, #questionFive, #roomTwo, #roomThree{
 	visibility: hidden;
 }
 
