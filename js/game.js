@@ -14,7 +14,7 @@ var correctAnsCount = 0;
 		//var input = document.getElementById(").value;
 
 		if(qInput == ansArray[i]){
-			document.getElementById(qDivsArray[i+1]).style.visibility = 'visible';
+			document.getElementById(qDivsArray[i+1]).style.display = 'block';
 
 			
 			alert(ansArray[i]);

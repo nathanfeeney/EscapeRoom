@@ -26,13 +26,13 @@ html{
 }
 article{
 	font-size: 35px;
-	font-weight:500;
+	font-weight:700;
 	font-family: 'Amatic SC', cursive;
 }
 
 .stopwatch{
 	text-align: center;
-	font-family: 'Amatic SC', cursive;
+	
 	margin:0 auto;
 }
 .stopwatch button{
@@ -106,9 +106,10 @@ hr{
 
             /* Question Styling */
 
-/*#questionTwo, #questionThree, #q3Title, #questionFour, #questionFive, #roomTwo, #roomThree{
-	visibility: hidden;
-}*/
+#questionTwo, #questionThree, #q3Title, #questionFour, #questionFive, #roomTwo, #roomThree{
+	/*visibility: hidden;*/
+	display:none;
+}
 
 
 .questionText{
@@ -144,15 +145,7 @@ input{
 
 
 
-
-
-
-
-
-
-
-
-/* FOOTER */
+/* -------------------FOOTER---------------------- */
 
 footer{
 	background: green;
