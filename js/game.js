@@ -38,8 +38,9 @@ var correctAnsCount = 0;
 
 	function openRoom(){
 		if (correctAnsCount == 5){
-			document.getElementById("roomTwo").style.visibility = 'visible';
-			document.getElementById("roomOne").style.visibility = 'hidden';
+			document.getElementById("roomTwo").style.display = 'block';
+			document.getElementById("roomOne").style.display = 'none';
+			document.getElementById("roomTwoLock-c").style.display = 'none';
 			
 		}
 	}
