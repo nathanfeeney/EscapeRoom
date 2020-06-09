@@ -11,6 +11,8 @@ html{
 
 .container{
 	background-color:#242423 ;
+	background-image: url('images/grunge1.jpeg');
+	background-repeat: repeat;
 	height:100%;
 	max-width: 100%;
 	
@@ -35,6 +37,7 @@ article{
 	
 }
 .row{
+	
 	/*background-color: #242423;*/
 }
 .header{
