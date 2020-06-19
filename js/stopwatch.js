@@ -61,9 +61,11 @@ function decrement(){
     }, 1000);
 }
 
- window.onload = function () {
+  function timeCalc() {
     var sixtyMinutes = 60 * 60,
         display = document.querySelector('#time');
+        document.getElementById("startPause").style.display = "none";
+
     startTimer(sixtyMinutes, display);
 };
 
