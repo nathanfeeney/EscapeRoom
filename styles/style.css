@@ -38,9 +38,11 @@ article{
 	padding:0 20px ;
 	color:#d65454;
 	background-color: #d4d4d4;
+	visibility: hidden;
 }
 .time-text{
 	font-size:5vw;
+	text-align: center;
 	
 }
 .stopwatch{
@@ -48,11 +50,12 @@ article{
 	
 	margin:0 auto;
 }
-.stopwatch button{
+#startPause{
 	border-radius: 50%;
-	padding:2%;
-	background-color: red;
+	padding:10%;
+	background-color:  #d65454;
 	border:2px white solid;
+
 }
 .stopwatch h1{
 	

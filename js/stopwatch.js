@@ -54,19 +54,32 @@ function decrement(){
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
         display.textContent = minutes + ":" + seconds;
+        console.log(display);
 
-        if (--timer < 0) {
-            timer = duration;
+
+        // When The time runs out Change the Content.
+        if (-- timer < 0) {
+        	display.textContent = "BOOM"   
+        	document.getElementById("time").style.border = "none";
+        	document.getElementById("time").style.background = "none"; 
+        	document.getElementById("time").style.color = "Yellow";       
         }
     }, 1000);
 }
 
   function timeCalc() {
-    var sixtyMinutes = 60 * 60,
+    var sixtyMinutes = 0.1 * 60,
         display = document.querySelector('#time');
         document.getElementById("startPause").style.display = "none";
+        document.getElementById("welcome").style.display = "none";
+        document.getElementById("time").style.visibility= "visible";
+
+
 
     startTimer(sixtyMinutes, display);
+
+
+ 
 };
 
 
